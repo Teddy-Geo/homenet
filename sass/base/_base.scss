@@ -1,0 +1,33 @@
+*,
+ *::after,
+ *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+ }
+ 
+ html{
+   //Set root font size to 10px=1rem and allow user to change the elements
+   font-size: 62.5%;
+
+   @media only screen and (max-width: $bp-large) {
+     font-size: 60%;
+   }
+   @media only screen and (max-width: $bp-smallest) {
+     font-size: 50%;
+   }
+ }
+ 
+ body {
+   box-sizing: border-box;
+   background-color: $color-white;
+ }
+
+ a{
+  text-decoration: none;
+  color: $primary-color;
+  
+}
+ul{
+ list-style: none;
+}

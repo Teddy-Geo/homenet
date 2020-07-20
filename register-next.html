@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo1.png">
+        
+        <title>HomeNet | Connect with people living in your area</title>
+    </head>
+    <body>
+        <div class="navbar__container">
+            <nav class="navbar">
+                <a class="navbar__logo-box" href="#">
+                         <img src="img/logo1.png" alt="Logo" class="navbar__logo-img">
+                         HomeNet
+                   </a>
+                   <ul>
+                       <li><a href="register.html">Register</a></li>
+                       <li><a href="login.html">Login</a></li>
+                       <li class="admin"><a href="#"><i class="fas fa-user"></i></i>Admin</a></li>
+                       
+                   </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="form-container">
+                <div class="form-img">
+                
+                </div>
+
+                <div class="form-content">
+                     <h2 class="medium text-dark centered py-1">
+                      Please complete to create your account.
+                     </h2>
+
+                     <p class="lead text-primary centered"> Step 2</p>
+
+                     <form action="dashboard.html" class="form">
+                      
+                      <div class="form__group">
+                        <input class="form__input" type="text" placeholder="Post Code" required id="postcode">
+                        <label for="postcode" class="form__label">Post Code</label>
+                        <p class="error-msg"></p>
+                      </div>
+                      
+                      <div class="form__group">
+                        <input class="form__input" type="text" placeholder="First line of address" required id="address">
+                        <label for="address" class="form__label">First line of address</label>
+                        <p class="error-msg"></p>
+                      </div>
+
+                       <div class="form__group">
+                         <input class="form__input" type="text" placeholder="Flat Number" required id="flat-num">
+                         <label for="flat-num" class="form__label">Flat Number</label>
+                         <p class="error-msg"></p>
+                       </div>
+
+                       <div class="form__group py-2">
+                        <div class="centered form__radio-group">
+                            <input type="radio" class="form__radio-input" id="remember-me">
+                            <label class="form__radio-label" for="remember-me"><span class="form__radio-button"></span>I agree with terms and conditions</label>
+                        </div>
+                    </div>
+                        
+                       <div class="form-grid py-2">
+                        <div class="form-group centered">
+                          <input type="submit" value="Go Back" class="btn btn--dark" onclick="location.href='register.html';">
+                        </div>
+
+                        <div class="form-group centered">
+                          <input type="submit" value="Sign Up" class="btn btn--primary" onclick="location.href='login-verify.html';">
+                        </div>
+                       </div>
+                       
+                    
+                     </form>
+                      <div class="py-2">
+                        <p class="small centered">Already have an account?<a href="login.html">Sign in.</a></p>
+                    
+                    <p class="centered"><a class="text-dark x-small " href="terms.html">Term of use. Privacy policy</a></p>  
+                      </div>
+                     
+                     
+                </div>
+            </div>
+        </div>
+         
+        
+    </body>
+</html>

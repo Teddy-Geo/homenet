@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo1.png">
+        
+        <title>HomeNet | Connect with people living in your area</title>
+    </head>
+    <body>
+      <div class="wrapper">
+      <div class="navbar__container">
+        <nav class="navbar">
+            <a class="navbar__logo-box" href="index.html">
+                     <img src="img/logo1.png" alt="Logo" class="navbar__logo-img">
+                      <span>HomeNet</span>  
+               </a>
+
+               <a id="hamburgerBtn">&#9776</a>
+
+               <form action="#" class="search">
+                 <input type="text" class="search__input" placeholder="Search">
+                 <button class="search__button">
+                   <svg class="search__icon">
+                     <use xlink:href="img/sprite.svg#icon-search"></use>
+                   </svg>
+                 </button>
+               </form>
+
+               <div class="user-nav">
+
+                <div class="user-nav__icon-box chatMsg">
+                  
+                  <svg class="user-nav__icon" >  
+                 <use xlink:href="img/sprite.svg#icon-chat"></use>
+               </svg>
+               <span class="user-nav__notification">7</span>
+
+               <ul class="user-nav__chat-list chatBox">
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-3.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Teo Geo
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          Hi John, How are you?
+                        </p>
+                      </div>
+                    </li>
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-4.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Anne Hathaway
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          The solution you recommended was great!
+                        </p>
+                      </div>
+                    </li>
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-5.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Tom John
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          This is perfect
+                        </p>
+                      </div>
+                    </li>
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-6.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Sara Johnson
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          Hey! Do you need help?
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                 </div>
+
+                 
+
+                 <div class="user-nav__user">
+                   <img src="img/user-4.jpg" alt="" class="user-nav__user-photo">
+                   <a href="profile-page.html"class="user-nav__user-name">John &#9660;</a>
+                   <!-- <ul class="user-nav__user--menu">
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">View Profile</a></li>
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">My Wallet</a></li>
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">Make Payment</a></li>
+                  </ul> -->
+                 </div>
+               
+
+
+                 <div class="user-nav__icon-box">
+                  <svg class="user-nav__icon">  
+                    <use xlink:href="img/sprite.svg#icon-log-out
+                    "></use>
+                  </svg>
+                 </div>
+
+               </div>
+        </nav>
+      </div>
+       
+        <div class="container">
+          <!-- <header class="header-user">
+            Header part
+          </header> -->
+          <div class="content">
+            <nav class="sidebar" id="sideMenu">
+              <ul class="side-nav">
+                <li class="side-nav__item">
+                  <a href="dashboard.html" class="side-nav__link side-nav__link--active">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="admin.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-pie-chart"></use>
+                    </svg>
+                    <span>Admin</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="building.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-home_work"></use>
+                    </svg>
+                    <span>Your Building</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="district.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-district"></use>
+                    </svg>
+                    <span>District</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item side-nav__item--active">
+                  <a href="documents.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-documents"></use>
+                    </svg>
+                    <span>Documents</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="events.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-insert_invitation"></use>
+                    </svg>
+                    <span>Events</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="important.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-note-important"></use>
+                    </svg>
+                    <span>Important</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="copyright">
+                &copy; 2020 by HomeNet.
+                <br> All rights reserved.
+             </div>
+            </nav>
+            
+                <!--Inner Page Content-->
+            <main class="user-view">
+              <div class="wrapper">
+                <section class="form-section">
+                              <h1>See Latest Bills and Documents Or:</h1>
+                               <br>
+                              <button class="btn-1 form-secBTN DocumentEventBtn">Share Document</button>
+                          <form action="" class="DocumentForm">
+                              <div class="form-sec_inputs">
+                                  <input type="text" name="eventAdd" id="eventAdd" placeholder="Subject..." class="form-sec_input">
+
+                                  <input type="text" name="eventAdd" id="eventAdd" placeholder="Description..." class="form-sec_input">
+                                   
+
+                                  <textarea name="description" id="description" class="form-sec_input" cols="30" rows="6" placeholder="Message..."></textarea>
+                                  <div class="textarea-button">
+                                      
+                                  
+                                    <div class="textarea-button">
+                                        <label for="documentUpload"><i class="fas fa-paperclip"></i>&nbsp;Add Document/Bill</label>
+                                        <input type="file" name="documentUpload" id="documentUpload">
+                                    </div>
+                                  </div>
+                              </div>
+                              <button class="btn-3 communityBTN" name="communitySubmit">
+                                <i class="far fa-edit"></i> &nbsp;Post to Community
+                            </button>
+                            <button class="btn-1 neighbourBTN" name="neighbourhoodSubmit">
+                                <i class="far fa-edit"></i> &nbsp;Post to Neighbourhood
+                            </button>     
+                          </form>
+                      </section>
+                      <br>
+                      <section class="reply-section">
+                        <div class="reply-content">
+                            <div class="reply-text">
+                                <div class="user-img">
+                                    <img src="img/businessman-character-avatar-icon-vector-illustration-design_24877-18271.jpg" alt="">
+                                </div>
+                                <div class="user-reply">
+                                    <div class="user-profile">
+                                        <h2>Elliot Fu</h2>
+                                        <span>Yesterday at 12:30AM</span>
+                                    </div>
+                                    <div class="user-msg">
+                                        <p>This has been very useful for my research. Thanks as well!</p>
+                                    </div>
+                                    <div class="reply-details">
+                                        <div class="reply">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="like">
+                                          <a href="#">Like? </a> 
+                                            <i class="fas fa-heart"></i>
+                                            <sub>12</sub>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="reply-text-img">
+                                        <img src="img/nat-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reply-form">
+                              <form action="">
+                                  <textarea name="replyInput" id="replyInput" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                  <button type="submit" name="submit" class="btn-3"><i class="far fa-edit"></i>&nbsp; Add reply</button>
+                              </form>
+                          </div>
+                            <!-- Second reply -->
+                            <div class="reply-text">
+                                <div class="user-img">
+                                    <img src="img/user-3.jpg" alt="">
+                                </div>
+                                <div class="user-reply">
+                                    <div class="user-profile">
+                                        <h2>Joe Henderson</h2>
+                                        <span>5 day ago</span>
+                                    </div>
+                                    <div class="user-msg">
+                                        <p>This is the best so far. Thanks so much!</p>
+                                    </div>
+                                    <div class="reply-details">
+                                        <div class="reply">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="like">
+                                            <a href="#">Like? </a> 
+                                            <i class="fas fa-heart"></i>
+                                            <sub>12</sub>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply-form">
+                            <form action="">
+                                <textarea name="replyInput" id="replyInput" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <button type="submit" name="submit" class="btn-3"><i class="far fa-edit"></i>&nbsp; Add reply</button>
+                            </form>
+                        </div>
+                    </section>
+              </div>
+              
+            </main>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <script src="https://kit.fontawesome.com/b8d2ebdebd.js" crossorigin="anonymous"></script>
+    <script src="main.js/sidebar.js"></script>
+</html>

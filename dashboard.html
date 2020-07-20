@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo1.png">
+        
+        <title>HomeNet | Connect with people living in your area</title>
+    </head>
+    <body>
+      <div class="wrapper">
+      <div class="navbar__container">
+        <nav class="navbar">
+            <a class="navbar__logo-box" href="index.html">
+                     <img src="img/logo1.png" alt="Logo" class="navbar__logo-img">
+                      <span>HomeNet</span>  
+               </a>
+
+               <a id="hamburgerBtn">&#9776</a>
+
+               <form action="#" class="search">
+                 <input type="text" class="search__input" placeholder="Search">
+                 <button class="search__button">
+                   <svg class="search__icon">
+                     <use xlink:href="img/sprite.svg#icon-search"></use>
+                   </svg>
+                 </button>
+               </form>
+
+               <div class="user-nav">
+                <div class="user-nav__icon-box chatMsg">
+                  
+                  <svg class="user-nav__icon" >  
+                 <use xlink:href="img/sprite.svg#icon-chat"></use>
+               </svg>
+               <span class="user-nav__notification">7</span>
+
+               <ul class="user-nav__chat-list chatBox">
+                 <li class="user-nav__chat--item">
+                   <img class = "user-nav__chat--profile-pic" src="img/user-3.jpg" alt="user3 photo">
+                   <div class="user-nav__chat--text">
+                     <h3 class="user-nav__chat--heading">
+                       Teo Geo
+                     </h3>
+                     <p class="user-nav__chat--message">
+                       Hi John, How are you?
+                     </p>
+                   </div>
+                 </li>
+                 <li class="user-nav__chat--item">
+                   <img class = "user-nav__chat--profile-pic" src="img/user-4.jpg" alt="user3 photo">
+                   <div class="user-nav__chat--text">
+                     <h3 class="user-nav__chat--heading">
+                       Anne Hathaway
+                     </h3>
+                     <p class="user-nav__chat--message">
+                       The solution you recommended was great!
+                     </p>
+                   </div>
+                 </li>
+                 <li class="user-nav__chat--item">
+                   <img class = "user-nav__chat--profile-pic" src="img/user-5.jpg" alt="user3 photo">
+                   <div class="user-nav__chat--text">
+                     <h3 class="user-nav__chat--heading">
+                       Tom John
+                     </h3>
+                     <p class="user-nav__chat--message">
+                       This is perfect
+                     </p>
+                   </div>
+                 </li>
+                 <li class="user-nav__chat--item">
+                   <img class = "user-nav__chat--profile-pic" src="img/user-6.jpg" alt="user3 photo">
+                   <div class="user-nav__chat--text">
+                     <h3 class="user-nav__chat--heading">
+                       Sara Johnson
+                     </h3>
+                     <p class="user-nav__chat--message">
+                       Hey! Do you need help?
+                     </p>
+                   </div>
+                 </li>
+               </ul>
+             </div>  
+
+                 
+
+                 <div class="user-nav__user">
+                   <img src="img/user-4.jpg" alt="" class="user-nav__user-photo">
+                   <a href="profile-page.html"class="user-nav__user-name">John &#9660;</a>
+                   <!-- <ul class="user-nav__user--menu">
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">View Profile</a></li>
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">My Wallet</a></li>
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">Make Payment</a></li>
+                  </ul> -->
+                 </div>
+               
+
+
+                 <div class="user-nav__icon-box">
+                  <svg class="user-nav__icon">  
+                    <use xlink:href="img/sprite.svg#icon-log-out
+                    "></use>
+                  </svg>
+                 </div>
+
+               </div>
+        </nav>
+      </div>
+       
+        <div class="container">
+          <!-- <header class="header-user">
+            Header part
+          </header> -->
+          <div class="content">
+            <nav class="sidebar" id="sideMenu">
+              <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                  <a href="dashboard.html" class="side-nav__link side-nav__link--active">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item ">
+                  <a href="admin.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-pie-chart"></use>
+                    </svg>
+                    <span>Admin</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="building.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-home_work"></use>
+                    </svg>
+                    <span>Your Building</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="district.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-district"></use>
+                    </svg>
+                    <span>District</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="documents.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-documents"></use>
+                    </svg>
+                    <span>Documents</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="events.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-insert_invitation"></use>
+                    </svg>
+                    <span>Events</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="important.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-note-important"></use>
+                    </svg>
+                    <span>Important</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="copyright">
+                &copy; 2020 by HomeNet.
+                <br> All rights reserved.
+             </div>
+            </nav>
+            <main class="user-view">
+              <section class="Suggestion-section">
+                <div class="suggestion-content">
+                    <h1>Rise your suggestion<br> to all co-owners</h1>
+                    <div class="suggdesciption">
+                          <h1>New Suggestions</h1>
+                          <div class="suggest-date">
+                            <h2>Description:</h2>
+                            <span>2 day ago</span>
+                          </div>
+                        <p>Lorem ipsum dolor sit amet consecte pisicing elit. Nobis asperiores molest
+                          unde pariatur magnam, esse corrupti.
+                           Quidem facere itaque reiciendis enim, recusandae reprehenderit consequuntur id explicabo sed?</p>
+                           <div class="likes">
+                            <h4>Do you approve?
+                              <br> Then give a like!</h4>
+                            <a href=""><i class="far fa-thumbs-up"></i> 6 likes</a>
+                          </div>
+                    </div>
+                    <form action="" class="optionSelectFrom">
+                        <h1>Select one of the option:</h1>
+                        <div class="select-option">
+                            <div class="option-content">
+                                <input type="radio" name="selectOption" id="selectOption1">
+                                <h2>Fix the Roof</h2>
+                                <h2><strong> 426</strong></h2>
+                                <h2>Voted</h2>
+                            </div>
+                            <div class="option-content">
+                                <input type="radio" name="selectOption" id="selectOption2">
+                                <h2>Paint the fence</h2>
+                                <h2><strong> 378</strong></h2>
+                                <h2>Voted</h2>
+                            </div>
+                            <div class="option-content">
+                                <input type="radio" name="selectOption" id="selectOption3">
+                                <h2>New cleaner</h2>
+                                <h2><strong> 226</strong></h2>
+                                <h2>Voted</h2>
+                            </div>
+                            <div class="option-content">
+                                <input type="radio" name="selectOption" id="selectOption4">
+                                <h2>Gardening</h2>
+                                <h2><strong>50</strong></h2>
+                                <h2>Voted</h2>
+                            </div>
+                        </div>
+                        <div class="form-group suggestionInputSection">
+                            <textarea name="suggestionInput" id="suggestionInput"  rows="5" placeholder="You have something to suggest..."></textarea>
+                            <small>Your vote has been counted!</small>
+                            <button type="submit" class="btn btn--primary suggestSubmit">Add Suggestion</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="totalChart">
+                    <div class="currentBudget">
+                        <h1>£630.00</h1>
+                        <p>Current Building Budget</p>
+                        <hr>
+                        <h2 class="medium text-primary">Recived offers</h2>
+                        <ul>
+                          <li class="my-2">Fix Roof <strong>£400.00</strong></li>
+                          <li class="my-2">Paint the fence <strong>£150.00</strong></li>
+                          <li class="my-2">New Cleaner per mount <strong>£160.00</strong></li>
+                        </ul>
+                    </div>
+                    <div class="chartSection">
+                        <canvas id="myChart" style="height:70vw; width:100vw"> </canvas>
+                        <p class="chart" for="myChart">2500 <br>
+                          Total Votes</p>
+                    </div>
+                </div>
+            </section>
+              
+            </main>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <script src="https://kit.fontawesome.com/b8d2ebdebd.js" crossorigin="anonymous"></script>
+    <script src="/main.js/sidebar.js"></script>
+    <script src="/main.js/chart.js"></script>
+</html>

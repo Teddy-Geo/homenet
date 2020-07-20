@@ -1,0 +1,21 @@
+.user-view {
+  //background-color: $color-white;
+  //background-color: plum;
+  height: 100rem;
+  flex: 1;
+  margin-left: 25rem;
+  @media only screen and (max-width: $bp-large){
+    margin-left: 22rem;    
+} 
+
+  @media only screen and (max-width: $bp-small){
+      margin-left: 1rem;
+      margin-top: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest){
+      margin-top: 7rem;    
+ } 
+ 
+
+}

@@ -1,0 +1,19 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="154" height="48" viewBox="0 0 154 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: rgba(0,0,0,0.6);
+      }
+
+      .cls-2 {
+        font-size: 25px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_306" data-name="Rectangle 306" class="cls-1" width="6" height="14" rx="3" transform="translate(0 31)"/>
+  <rect id="Rectangle_307" data-name="Rectangle 307" class="cls-1" width="6" height="27" rx="3" transform="translate(14 18)"/>
+  <rect id="Rectangle_308" data-name="Rectangle 308" class="cls-1" width="6" height="45" rx="3" transform="translate(28)"/>
+  <text id="HomeNet" class="cls-2" transform="translate(40 42)"><tspan x="0" y="0">HomeNet</tspan></text>
+</svg>

@@ -1,0 +1,215 @@
+.Suggestion-section{
+  width: 80%;
+  margin: 20px auto;// !important;
+}
+.suggestion-content{
+  width: 60%;
+  float: left;
+  @include responsive(bp-small){
+      float: initial;
+      width: 100%;
+  }
+}
+.likes{
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  & h4{
+    font-weight: 500;
+    color: $dark-text-color;
+  }
+  & a{
+    margin-right: 2rem;
+    padding: 0.8rem 2rem;
+  }
+  & i{
+   font-size: 2rem;
+   color: $dark-color;
+   //padding: 0.6rem;
+  }
+  & i:hover{
+    font-size: 2.2rem;
+    color: $primary-color;
+   }
+}
+.totalChart{
+  //padding: 1.5rem 0;
+  margin-left: 5rem;
+  //width: 40%;
+  //float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @include responsive(bp-small){
+      float: initial;
+      width: 100%;
+      margin: 70px 0 0 0;
+  }
+}
+.chart{
+  color: $dark-color;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -14rem;
+  @include responsive(bp-small){
+    margin-top: -29rem;
+}
+@include responsive(bp-smallest){
+  margin-top: -14rem;
+}
+}
+.suggestion-content h2{
+  //color: $primary-color;
+  font-size: 1.5rem;
+  font-weight: 400;
+  
+}
+h1{
+  color: $dark-text-color;
+  font-size: 2.2rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.suggdesciption{
+  margin: 40px 0;
+  max-width: 80%;
+}
+.suggdesciption h1{
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+.suggdesciption h2{
+  color: $color-light-black;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.suggdesciption p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.suggest-date{
+display: flex;
+justify-content: space-between;
+margin-right: 2rem;
+padding-bottom: 0.5rem;
+
+  & span{
+    color: $dark-text-color;
+  }
+}
+                            
+.optionSelectFrom h1{
+  color: $primary-color;
+  font-weight: 500;
+}
+.select-option{
+  margin-top:20px;
+}
+.option-content {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10px 0 0 0;
+  @include responsive(bp-smallest){
+      width: 100%;
+  }
+  h2{
+    color: $dark-color;
+    font-weight: 500;
+  }
+}
+.suggestionInputSection{
+  width: 80%;
+  margin: 60px 0 0 0;
+  @include responsive(bp-smallest){
+      width: 100%;
+  }
+}
+#suggestionInput{
+  width: 100%;
+  border: 1px solid $color-light-black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.suggestionInputSection small{
+  color: $success-color;
+  font-size: 1.4rem;
+}
+.suggestSubmit{
+  float: right;
+  height:35px;
+  padding:0 20px;
+  @include responsive(bp-verysmallest){
+      float: initial;
+      display: block;
+      margin: 10px 0 0 0;
+  }
+}
+input[type='radio'] {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  outline: none;
+}
+#selectOption1{
+  border: 3px solid $primary-color;
+}
+#selectOption2{
+  border: 3px solid $color-orange;
+}
+#selectOption3{
+  border: 3px solid $color-yellow;
+}
+#selectOption4{
+  border: 3px solid $color-light-purple;
+}
+
+input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%;
+}
+input[type="radio"]:checked:before {
+  background: $primary-color;    
+}    
+input[type="radio"]:checked {
+  background: $primary-color;
+}
+
+.currentBudget{
+  background-color: $light-color;
+  box-shadow: .6rem 0 .6rem rgba(0,0,0,.2);
+  display: inline-block;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 200px;
+}
+.currentBudget h1{
+  color: $dark-text-color;
+  font-weight:600;
+  font-size: 2.5rem; //25px
+  @include responsive(bp-small){
+      font-size: 4rem //40px;
+  }
+}
+.currentBudget p{
+  color: $dark-color;
+  font-size: 1.6rem;
+  font-weight: 500;
+}

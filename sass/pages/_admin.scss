@@ -1,0 +1,348 @@
+.billpoll-section {
+  /*  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between; */
+  width: 80%;
+  margin: 0 auto;
+
+  /* @include responsive(bp-large){
+    width: 80%;
+    margin: 0;
+  }
+  
+   @include responsive(bp-small){
+    margin-left: 5rem;
+  }  */
+}  
+  .billTypeForm {
+    float: left;
+      width: 45%;
+      @include responsive(bp-large){
+          float: initial;
+          width: 100%;
+          
+      }
+      @include responsive(bp-smallest){
+        float: initial;
+        width: 100%;
+        
+    }
+      
+  }
+  .poll-form{
+  float: right;
+      width: 45%;
+      @include responsive(bp-large){
+          float: initial;
+          width: 100%;
+          margin-left: 0;
+          //margin: 140px 0 0 0;
+      }
+  
+  }
+  
+  .communityBTN{
+    float: right;
+  }
+  
+  .form-secBTN,.communityBTN,.neighbourBTN{
+    // width: 147px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 30px;
+    //margin: 0 15px 0 0;
+    @include responsive(bp-smallest){
+        padding: 0 10px;
+        font-size: 14px;
+        margin:  0 15px 15px 0;
+    }
+    @include responsive(bp-small){
+        padding: 0 10px;
+    }
+  }
+  
+  #description{
+    border: none;
+  }
+  
+  .textarea-button{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  label{
+    cursor: pointer;
+    color: $primary-color;
+    //width: 150px;
+    //font-size: 17px;
+    font-weight: 500;
+    @include responsive(bp-verysmallest){
+        font-size: 14px;
+    }
+    @include responsive(bp-large){
+        font-size: 14px;
+    }
+  
+    &:hover{
+      color: $dark-color;
+    }
+    
+  }
+  
+  label i{
+    color: $dark-color;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+
+    /*  #addMoreOption::placeholder{
+    //display: flex;
+    color: $primary-color;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500; }  */
+    .addMoreOption{
+      background: none;
+      color: $primary-color;
+      cursor: pointer;
+      outline: none;
+      &:focus{
+          outline: none;
+      }
+    & i{
+      color: $dark-color;
+    }  
+  }
+  .newInputField{
+      position: relative;
+  }
+
+  .remove_field{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: $primary-color;
+    text-decoration: none;
+}
+ 
+
+  /* .addMoreOptions{
+     display: none;
+   } 
+   .more-options{
+    padding: 1.5rem;
+    & i{
+      color: $dark-color;
+    }
+   } */
+
+  
+   .list-display{
+    width: 100%;
+    margin-top:4rem;
+    display: block;
+
+    & h3{
+      margin-right: 15%;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    @include responsive(bp-large){
+      margin: 0 auto;
+  }
+  }
+  
+  // Table 
+  .table{
+    width: 90%;
+    margin:auto;
+    padding-top:5rem;
+    //overflow-x: auto;
+    //position: relative;
+    @include responsive(bp-smallest){
+
+      table, thead, tbody, th, td, tr { 
+        display: block; 
+      }
+
+      thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr {
+         border: 1px solid $color-light-gray;
+         border-radius: 5px;
+         width: 90%;
+         margin:0 auto;
+        
+      }
+      
+     
+      tr:nth-of-type(odd) { 
+        background: $light-color; 
+      }
+
+      td { 
+        
+      }
+      td:before { 
+        /* Now like a table header */
+        /* Top/left values mimic padding */
+        border-radius: 5px;
+        //position: absolute;
+        font-weight: 700;
+        font-size: 1.6rem;
+        //top: .6rem;
+        //left: 6px;
+        //width: 45%; 
+        //padding-right: 5rem; 
+        white-space: nowrap;
+      }
+
+      td:nth-of-type(1):before { content: "Flat Number"; margin-right: 47%;padding: 2rem; }
+      td:nth-of-type(2):before { content: "Paid"; margin-right: 65%; padding: 2rem; }
+      td:nth-of-type(3):before { content: "Resident Contacts"; padding: 2rem; margin-left: 22%; text-align: center;}
+      td:nth-of-type(4):before { content: "Total Residents";margin-right: 45%; padding: 2rem; }
+      td:nth-of-type(5):before { content: "Annual Rate"; margin-right: 45%; padding: 2rem; }
+      td:nth-of-type(6):before { content: "Bills"; margin-right: 65%; padding: 2rem; }
+      td:nth-of-type(7):before { content: "Total Annual Tax"; margin-right: 34%; padding: 2rem;}
+      td:nth-of-type(8):before { content: "Total per Flat";  margin-right: 40%; padding: 2rem;}
+      
+	
+  }
+  }
+
+  /*  .table th{
+   font-size: 1.2rem;
+  }    */
+  .table thead tr {
+    background-color: #F1F8FF;
+    color: $dark-text-color;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+ /*  .table tbody tr{
+    padding: 10px 0 0 0;
+  } */
+  .table tbody tr td{
+    font-size: 1.4rem;
+    color: $dark-color;
+    font-weight:500;
+    //text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 1px solid $color-light-gray;
+     @include responsive(bp-small){
+      //padding: 2rem 1rem;
+     
+    }
+    @include responsive(bp-verysmallest){
+      //padding: .5rem .5rem;
+    } 
+  }
+  .table tbody tr td p{
+    font-size: 1.3rem;
+    color: $color-light-gray;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .table-buttons{
+    @include responsive(bp-smallest){
+      text-align: center;
+    }
+  }
+  .editBTN{
+    color: $success-color;
+    transition:all 0.2s linear;
+    font-size: 1.4rem;
+    font-weight:700;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color: $dark-color;
+    }
+  }
+  .updateBTN{
+    color: $dark-color;
+    transition:all 0.2s linear;
+    font-size: 1.4rem;
+    font-weight:700;
+    text-decoration: none;
+    //margin: 0 5px;
+    &:hover{
+        text-decoration: none;
+        color: $primary-color;
+    }
+  }
+  .deleteBTN{
+    color: $danger-color;
+    transition:all 0.2s linear;
+    font-size: 1.4rem;
+    font-weight:700;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color: $dark-color;
+    }
+  }
+  .sendInvoiceBTN{
+    color: $primary-color;
+    transition:all 0.2s linear;
+    font-size: 1.4rem;
+    font-weight:700;
+    //margin-left:5px;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color: $dark-color;
+    }
+  }
+  .table-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     @include responsive(bp-smallest){
+       margin-top: 3.5rem;
+      //flex-direction: row;
+      //justify-content: flex-end;
+      //right: 50%;
+      //bottom: 50;
+      //transform: translate(-50%, -65%);
+    }  
+  }
+  .table-img{
+    width: 45px;
+    height: 45px;
+    align-items: flex-start;
+    //margin: 0 10px 0 0;
+    //float: left;
+    /* @include responsive(bp-smallest){
+      //float: right;
+      margin: 0;
+      width: 25px;
+      height: 25px;
+    } */ 
+  }
+  
+  .table-img img{
+    width: 100%;
+    border-radius: 50%;
+  }
+  /* .table-text{
+    float: right;
+  } */
+  .table-text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .table tfoot tr{
+    font-size: 1.7rem;
+  }
+
+  

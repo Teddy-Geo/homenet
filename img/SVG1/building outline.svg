@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="25" viewBox="0 0 126 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0.6);
+        font-size: 14px;
+        font-family: Lato-Regular, Lato;
+      }
+    </style>
+  </defs>
+  <text id="building_outline" data-name="building outline" class="cls-1"><tspan x="15.592" y="14">building outline</tspan></text>
+</svg>

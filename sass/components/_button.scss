@@ -1,0 +1,76 @@
+//Buttons
+.btn{
+  &,
+  &:link,
+  &:visited {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 400;
+   padding: 1.5rem 4rem;
+   display:inline-block;
+   border-radius: .5rem;
+   transition: all .2s;
+   font-size: 1.2rem;
+
+   border: none;
+   cursor: pointer;
+
+   &:hover{
+     transform: translateY(-3px);
+     box-shadow: 0 1rem 2rem rgba($color-black,.5);
+   }
+   
+   &:active{
+     transform: translateY(-1px);
+     box-shadow: 0 .5rem 1rem rgba($color-black,.5);
+   }
+   
+   &.btn--primary{
+     background-color: $primary-color;
+     color: $color-white;
+   }
+  
+   &.btn--dark {
+     background-color:$dark-text-color;
+     color: $color-white;
+   }
+}
+}
+ 
+.btn-1,.btn-2,.btn-3{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 5px 10px;
+  transition: all 0.2s linear;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  
+}
+.btn-1{
+  background:$dark-text-color;
+  &:hover{
+      background: $primary-color;
+  }
+}
+.btn-3{
+  background:$primary-color;
+  &:hover{
+      background: $dark-text-color;
+  }
+}
+.btn-2{
+  color: $primary-color;
+  background: none;
+  font-size: inherit;
+  font-weight: 500;
+  &:hover{
+      color: $dark-text-color;
+  }
+  &:active{
+      background: none;
+  }
+}

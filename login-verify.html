@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo1.png">
+        
+        <title>HomeNet | Connect with people living in your area</title>
+    </head>
+    <body>
+        <div class="navbar__container">
+            <nav class="navbar">
+                <a class="navbar__logo-box" href="#">
+                         <img src="img/logo1.png" alt="Logo" class="navbar__logo-img">
+                         HomeNet
+                   </a>
+                   <ul>
+                       <li><a href="register.html">Register</a></li>
+                       <li><a href="login.html">Login</a></li>
+                       <li class="admin"><a href="#"><i class="fas fa-user"></i>Admin</a></li>
+                   </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="form-container">
+                <div class="form-img">
+                
+                </div>
+
+                <div class="form-content">
+                     <h2 class="medium text-dark centered py-1">
+                        Welcome back! Please login to your account
+                     </h2>
+
+                     <p class="large centered text-success">
+                      You are  Register please verify your email
+                     </p>
+
+                     <p class="centered py-1"><a href="#" class="text-dark">Don't receive a link?</a></p>
+
+                     <form action="dashboard.html" class="form p-2">
+
+                       <div class="form__group">
+                         <input class="form__input" type="email" placeholder="Email Address" required id="email">
+                         <label for="email" class="form__label">Email Address</label>
+                         <p class="error-msg"></p>
+                       </div>
+
+                       <div class="form__group">
+                         <input class="form__input" type="password" placeholder="Password" minlength="6" id="password">
+                         <label for="password" class="form__label">Password</label>
+                         <p class="error-msg"></p>
+                       </div>
+                        
+                       <div class="form__group row py-2">
+                           <div class="col-1-of-2 centered form__radio-group">
+                               <input type="radio" class="form__radio-input" id="remember-me">
+                               <label class="form__radio-label" for="remember-me"><span class="form__radio-button"></span>Remember me</label>
+                           </div>
+
+                         <div class="col-1-of-2 centered">
+                            <a class="text-dark" href="forgot-password.html">Forgot Password?</a>
+                         </div>
+                       </div>
+                       <div class="form-group centered py-2">
+                            <input type="submit" value="Sign In" class="btn btn--dark">
+                       </div>
+                    
+                     </form>
+
+                     <p class="small centered">Don't have an account?<a href="register.html">Sign Up.</a></p>
+                    
+                    <p class="centered"><a class="text-dark x-small " href="terms.html">Term of use. Privacy policy</a></p>  
+                     
+                </div>
+            </div>
+        </div>
+         
+        
+    </body>
+</html>

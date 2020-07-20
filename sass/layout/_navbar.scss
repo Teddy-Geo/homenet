@@ -1,0 +1,321 @@
+//Navbar
+.navbar__container{
+  width: 100%;
+  position:fixed;
+   //z-index: 102;
+  height: 6rem;
+  box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.3);
+  top:0;
+  left: 0;
+
+  background-color: $dark-color;
+  border-bottom: solid 0.2rem $primary-color;
+  background-color: $dark-color;
+  //opacity: 0.9;
+  
+}
+ @media only screen and (max-width: $bp-small){
+ .navbar__container {
+   height: 7rem;
+ }
+} 
+@media only screen and (max-width: $bp-smallest){
+  .navbar__container {
+    height: 13rem;
+   
+  }
+ } 
+ .admin{
+  color: red;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  max-width: 136.6rem;
+  margin: 0 auto;
+  position: relative;
+  //font-size: 1.4rem;
+
+  @media only screen and (max-width:$bp-smallest) { 
+      flex-wrap: wrap;
+      height: 13rem;
+      justify-content: space-around;
+  }
+
+  ul{
+    display: flex;
+    font-size: 1.2rem;
+  }
+
+  a{
+    color: $color-white;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+    
+    &:hover{
+    color: $primary-color;
+  }
+  i{
+    font-size: 1.6rem;
+    padding-right: .5rem;
+    color: $primary-color;
+  }
+  } 
+  
+
+  &__logo-box{
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  }
+
+  &__logo-img{
+    height: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+
+    &__logo-box{
+      flex-direction: column;
+      font-size: 1rem;
+      }  
+
+      &__logo-box > span {
+        display: none;
+        }   
+    
+  &__logo-img {
+    height: 3rem;
+    width: 3rem;
+    //margin-left: 2rem;
+  }
+
+  }
+}
+
+
+// User navigation components
+
+//Search Box
+.search {
+  flex: 0 0 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+   order: 1;
+   flex: 0 0 100%;
+  }
+
+   &__input {
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: -3.5rem;
+    background-color: $color-white;
+    border-radius: 100px;
+    border: none;
+    padding: .7rem 2rem;
+    width: 90%;
+    transition: all .2sec;
+    
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: $light-color;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 300;
+      color: $color-grey-dark;
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: $light-color;
+  }
+
+  &__button {
+     background-color: $color-white;
+     border: none;
+     outline: none;
+
+     &:focus {
+       outline: none;
+     }
+
+
+     &:active {
+       transform: translateY(2px);
+     }
+  } 
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-light-black;
+  }
+}
+
+// User Navbar 
+.user-nav{
+  
+  display: flex;
+  align-items: stretch;
+  //justify-content: center;
+
+  // Select all direct children
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    fill: $color-white;
+    display: flex;
+    align-items: center;
+  }
+  & > *:hover{
+    fill: $primary-color;
+  }
+  
+  &__icon-box {
+    position: relative;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+   
+  }
+  
+  &__notification {
+     font-size: 1rem;
+     height: 1.3rem;
+     width: 1.3rem;
+     background-color: $primary-color;
+     border-radius: 50%;
+     color: $color-white;
+     position: absolute;
+     top: 0;
+     right: 1.5rem;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  
+
+  // Chat Notification drop-down
+  &__chat {
+    &-list {
+      position: absolute;
+      z-index: 100;
+      display: flex;
+      flex-flow: column nowrap;
+      color: #000;
+      width: 300%;
+      top: 100%;
+      left: -100%;
+      background-color: $dark-color;
+      border-radius: .5rem;  
+    }
+    
+    &--item {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 1rem 2rem;
+      justify-content: space-between;
+      align-items: center;
+      &:not(:last-child) {
+        border-bottom: .5px solid $light-color;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 1rem 1rem;
+      }
+    }
+
+    &--item > * {
+      transition: transform 0.3s;
+      //backface-visibility: hidden;
+    }
+
+    &--item:hover > * {
+      transform: scale(1.1);
+    }
+
+    &--profile-pic {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+
+    &--text {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-left: 2rem;
+      margin-right: auto;
+      color: $color-white;
+      backface-visibility: hidden;
+
+      @media only screen and (max-width: $bp-smallest) {
+        margin-left: 1rem;
+      }
+    }
+
+    &--heading {
+      color: $primary-color;
+     // backface-visibility: hidden;
+      font-weight: 400;
+    }
+
+    &--message {
+      //backface-visibility: hidden;
+      color: $color-white;
+    }
+  }
+
+/*   #chatBox {
+    transform: scaleY(-100rem);
+    transition: transform .3s;
+    transform-origin: top;
+    
+    
+  }
+
+  #chatBox.slide {
+    transform: scaleY(0);
+  }
+ */  
+
+  /* &__user {
+    
+   
+  }
+   */
+
+   /* MESSAGES TOGGLE CLASSES */
+   .chatBox{
+    display: none;
+  }
+  .activeMsg{
+    display: block;
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    
+  }
+
+  &__user-name{
+   color: $color-white;
+   margin-left: .5rem;
+
+   &:hover{
+     color: $primary-color;
+   }
+  }
+} 
+
+
+

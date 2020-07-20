@@ -1,0 +1,14 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "homeowners platform",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass": "node-sass sass/main.scss css/style.css -w server"
+  },
+  "author": "TIG",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

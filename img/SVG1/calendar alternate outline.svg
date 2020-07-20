@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="39" viewBox="0 0 126 39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0.6);
+        font-size: 14px;
+        font-family: Lato-Regular, Lato;
+      }
+    </style>
+  </defs>
+  <text id="calendar_alternate_outline" data-name="calendar alternate outline" class="cls-1"><tspan x="7.938" y="14">calendar alternate </tspan><tspan x="41.685" y="33">outline</tspan></text>
+</svg>

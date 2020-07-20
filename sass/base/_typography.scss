@@ -1,0 +1,94 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: $color-black;
+  //padding: 30px;
+  
+}
+
+// font size
+$font1:17px;
+$font2:14px;
+$font3:12px;
+
+
+//Text Styles
+.x-large {
+  font-size:  3rem;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size:  2rem;
+  margin-bottom: 1rem;
+}
+
+.medium {
+  font-size:  1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.x-small {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-success{
+  color: $success-color;
+}
+
+.text-dark {
+  color: $dark-color;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+ 
+  &--main{
+   display: block;
+   font-size: 3rem;
+   font-weight: 400;
+   letter-spacing:1rem;
+   padding: 2rem;
+   
+   animation-name: moveInLeft;
+   animation-duration: 3s;
+   animation-timing-function: ease-in;
+   /*animation-delay: 2s;
+   animation-iteration-count: 3;*/
+   }
+   
+   &--sub{
+   display: block;
+   font-size: 2rem;
+   font-weight: 500;
+   letter-spacing:1px;
+   animation: moveInRight 2s ease-in-out;
+   }
+  }

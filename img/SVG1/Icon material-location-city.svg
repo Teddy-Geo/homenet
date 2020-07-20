@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="47.707" viewBox="0 0 46 47.707">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0.6);
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        filter: url(#Icon_material-location-city);
+      }
+    </style>
+    <filter id="Icon_material-location-city" x="0" y="0" width="46" height="47.707" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.157"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Icon_material-location-city-2" data-name="Icon material-location-city" class="cls-1" d="M22.5,16.5v-9L18,3,13.5,7.5v3h-9v21h27v-15Zm-12,12h-3v-3h3Zm0-6h-3v-3h3Zm0-6h-3v-3h3Zm9,12h-3v-3h3Zm0-6h-3v-3h3Zm0-6h-3v-3h3Zm0-6h-3v-3h3Zm9,18h-3v-3h3Zm0-6h-3v-3h3Z" transform="translate(5 3.71)"/>
+  </g>
+</svg>

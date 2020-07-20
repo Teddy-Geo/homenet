@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo1.png">
+        
+        <title>HomeNet | Connect with people living in your area</title>
+    </head>
+    <body>
+      <div class="wrapper">
+      <div class="navbar__container">
+        <nav class="navbar">
+            <a class="navbar__logo-box" href="index.html">
+                     <img src="img/logo1.png" alt="Logo" class="navbar__logo-img">
+                      <span>HomeNet</span>  
+               </a>
+
+               <a id="hamburgerBtn">&#9776</a>
+
+               <form action="#" class="search">
+                 <input type="text" class="search__input" placeholder="Search">
+                 <button class="search__button">
+                   <svg class="search__icon">
+                     <use xlink:href="img/sprite.svg#icon-search"></use>
+                   </svg>
+                 </button>
+               </form>
+
+               <div class="user-nav">
+
+                <div class="user-nav__icon-box chatMsg">
+                  
+                  <svg class="user-nav__icon" >  
+                 <use xlink:href="img/sprite.svg#icon-chat"></use>
+               </svg>
+               <span class="user-nav__notification">7</span>
+
+               <ul class="user-nav__chat-list chatBox">
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-3.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Teo Geo
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          Hi John, How are you?
+                        </p>
+                      </div>
+                    </li>
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-4.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Anne Hathaway
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          The solution you recommended was great!
+                        </p>
+                      </div>
+                    </li>
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-5.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Tom John
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          This is perfect
+                        </p>
+                      </div>
+                    </li>
+                    <li class="user-nav__chat--item">
+                      <img class = "user-nav__chat--profile-pic" src="img/user-6.jpg" alt="user3 photo">
+                      <div class="user-nav__chat--text">
+                        <h3 class="user-nav__chat--heading">
+                          Sara Johnson
+                        </h3>
+                        <p class="user-nav__chat--message">
+                          Hey! Do you need help?
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                 </div>
+
+                 
+
+                 <div class="user-nav__user">
+                   <img src="img/user-4.jpg" alt="" class="user-nav__user-photo">
+                   <a href="profile-page.html"class="user-nav__user-name">John &#9660;</a>
+                   <!-- <ul class="user-nav__user--menu">
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">View Profile</a></li>
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">My Wallet</a></li>
+                    <li class="user-nav__user--item"><a href="#"class="user-nav__user-name">Make Payment</a></li>
+                  </ul> -->
+                 </div>
+               
+
+
+                 <div class="user-nav__icon-box">
+                  <svg class="user-nav__icon">  
+                    <use xlink:href="img/sprite.svg#icon-log-out
+                    "></use>
+                  </svg>
+                 </div>
+
+               </div>
+        </nav>
+      </div>
+       
+        <div class="container">
+          <!-- <header class="header-user">
+            Header part
+          </header> -->
+          <div class="content">
+            <nav class="sidebar" id="sideMenu">
+              <ul class="side-nav">
+                <li class="side-nav__item">
+                  <a href="dashboard.html" class="side-nav__link side-nav__link--active">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item side-nav__item--active">
+                  <a href="admin.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-pie-chart"></use>
+                    </svg>
+                    <span>Admin</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="building.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-home_work"></use>
+                    </svg>
+                    <span>Your Building</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="district.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-district"></use>
+                    </svg>
+                    <span>District</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="documents.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-documents"></use>
+                    </svg>
+                    <span>Documents</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="events.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-insert_invitation"></use>
+                    </svg>
+                    <span>Events</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="important.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-note-important"></use>
+                    </svg>
+                    <span>Important</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="copyright">
+                &copy; 2020 by HomeNet.
+                <br> All rights reserved.
+             </div>
+            </nav>
+            
+                <!--Inner Page Content-->
+            <main class="user-view">
+              <section class="form-section billpoll-section">
+                        <div class="billTypeForm"> 
+                           
+                                <!-- Current type bill -->
+                                <h1 class="my-3">Current Bills Total £100</h1>
+                                <button class="btn-1 form-secBTN AdminEventBtn1"><i class="fas fa-file-invoice-dollar"></i>&nbsp;&nbsp;Add a new Bill</button>
+                              <form action="" class="AdminForm1">  
+                                <div class="form-group form-sec_inputs mb-4">
+                                   <!--  <select name="typeOfBill" id="typeOfBill" class="form-sec_input">
+                                        <option value="0">Choose Type of Bills</option> 
+                                        <option value="1">Gas</option>
+                                        <option value="2">Electricity</option>
+                                        <option value="3">Cleaner</option>
+                                        <option value="4">Gardener</option>
+                                        <option value="5">Other</option>
+                                    </select> -->
+                                    <div class="drop-down form-sec_input">
+                                      <div class="selected space-between">
+                                        <a href="#"><span> &#9660; Choose type of Bill</span>
+                                        </a>
+                                      </div>
+                                      <div class="options">
+                                        <ul>
+                                          <li><a href="#" class="one">Gas<span class="value">1</span></a></li>
+                                          <li><a href="#" class=" two">Electricity<span class="value">2</span></a></li>
+                                          <li><a href="#" class="three">Cleaning<span class="value">3</span></a></li>
+                                          <li><a href="#" class="four">Gardening<span class="value">4</span></a></li>
+                                          <li><a href="#" class="two">Other<span class="value">5</span></a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    
+
+                                    <input type="text" name="amount" id="amount" placeholder="Amount" class="form-sec_input">
+                                    
+
+                                    <textarea name="description" id="description" class="form-sec_input" cols="30" rows="2" placeholder="Description"></textarea>
+                                    <div class="textarea-button">
+                                        <label for="documentUpload"><i class="fas fa-paperclip"></i>&nbsp;Add Document/Bill</label>
+                                        <input type="file" name="documentUpload" id="documentUpload">
+                                    </div>
+                                </div>  <button class="btn-3 communityBTN" name="currentBillSubmit">
+                                  Submit
+                              </button>  
+                            </form>
+                        </div>
+                        
+                        <div class="poll-form">
+                          <!-- Add new Poll section -->
+                             
+                            <h1 class="my-3"><strong style="color: #47b2e4; text-align: left;">1</strong> Active Poll - <a href="dashboard.html">View Votes</a></h1>
+                            <button class="btn-1 form-secBTN AdminEventBtn2"><i class="fas fa-chart-pie"></i>&nbsp;&nbsp;Add a new Poll</button>
+                          
+                          
+                              <form action="" class="AdminForm2">
+                                  <div class="form-group form-sec_inputs" id="PollFormInput">
+                                      <input type="text" name="titleQuestion" id="titleQuestion" placeholder="Title / Question" class="form-sec_input">
+                                      
+                                      <input type="text" name="pollDescription" id="pollDescription" placeholder="Description" class="form-sec_input">
+                                      
+                                      <input type="text" name="addOption" id="addOption" placeholder="Add first option" class="form-sec_input">
+                                      
+                                      <input type="text" name="addMoreOption" placeholder="Add next option"  id="addMoreOption" class="form-sec_input">
+                                      
+                                  </div>
+                                  <button class="btn-2 addMoreOption"><i class="fas fa-plus"></i>&nbsp;Add More Options</button>
+                                  
+                                  <button class="btn-3 communityBTN" name="currentBillSubmit">
+                                      Submit
+                                  </button>
+                                  
+                              </form>
+                      </div>
+                        <!-- <div class="poll-form">
+                            Add new Poll section
+                            
+                                <button class="btn btn--dark form-secBTN FormEventBtn2"><i class="fas fa-chart-pie"></i>&nbsp;&nbsp;Add a new Poll</button>
+                                <form action="" class="inputForm2">  
+                                <div class="form-group form-sec_inputs" id="PollFormInput"> 
+                                  
+                                    <input type="text" name="titleQuestion" id="titleQuestion" placeholder="Title / Question" class="form-sec_input">
+                                    
+
+                                    <input type="text" name="pollDescription" id="pollDescription" placeholder="Description" class="form-sec_input">
+                                    <hr class="hr-form">
+
+                                    <input type="text" name="addOption" id="addOption" placeholder="Add an option" class="form-sec_input">
+
+                                     <input type="text" name="addMoreOption" id="addMoreOption" placeholder="Other option" class="form-sec_input addMoreOptions"> 
+                                     
+                                </div>
+                                <button class="btn-2 more-options"><i class="fas fa-plus"></i>&nbsp;Add More Options </button>
+
+                                <button class="btn-3 communityBTN" name="currentBillSubmit">
+                                    Submit
+                                </button>
+                            </form>
+                        </div> -->
+                    </section>
+                    <section class="list-display">
+                        <table class="table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Flat/</th>
+                                    <th style="text-align: right;">Paid</th>
+                                    <th style="text-align: center;"> Occupier <br> Contact</th>
+                                    <th> Total <br>  Occupants</th>
+                                    <th >Annual <br> Rate</th>
+                                    <th>Bills</th>
+                                    <th>Total <br> Annual Tax </th>
+                                    <th>Total <br> Per Flat</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input type="checkbox" name="tableCheckbox">
+                                    </td>
+                                    <td>
+                                      <div class="table-contacts">
+                                        <div class="table-img">
+                                            <img src="img/user-2.jpg" alt="">
+                                        </div>
+                                        <div class="table-text">
+                                            David James
+                                            <p>Email:davidjames@gmail.com</p>
+                                        </div>
+                                      </div>  
+                                    </td>
+                                    <td>3</td>
+                                    <td>£6.00</td>
+                                    <td>£15.00</td>
+                                    <td>£18.00</td>
+                                    <td>£33.00</td>
+                                    <td class="table-buttons">
+                                      <div><a href="#" class="editBTN">Edit</a></div>
+                                      <div><a href="#" class="updateBTN">Update</a></div>
+                                       <div><a href="#" class="deleteBTN">Delete</a></div>
+                                       <div><a href="#" class="sendInvoiceBTN">Invoicing</a></div>
+                                   </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                    <td><input type="checkbox" name="tableCheckbox">
+                                    </td>
+                                    <td>
+                                      <div class="table-contacts">
+                                        <div class="table-img">
+                                            <img src="img/user-2.jpg" alt="">
+                                        </div>
+                                        <div class="table-text">
+                                            David James
+                                            <p>Email:davidjames@gmail.com</p>
+                                        </div>
+                                      </div>  
+                                    </td>
+                                    <td>3</td>
+                                    <td>£6.00</td>
+                                    <td>£15.00</td>
+                                    <td>£18.00</td>
+                                    <td>£33.00</td>
+                                    <td class="table-buttons">
+                                      <div><a href="#" class="editBTN">Edit</a></div>
+                                      <div><a href="#" class="updateBTN">Update</a></div>
+                                       <div><a href="#" class="deleteBTN">Delete</a></div>
+                                       <div><a href="#" class="sendInvoiceBTN">Invoicing</a></div>
+                                   </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                    <td><input type="checkbox" name="tableCheckbox"></td>
+                                    <td>
+                                      <div class="table-contacts">
+                                        <div class="table-img">
+                                            <img src="img/user-2.jpg" alt="">
+                                        </div>
+                                        <div class="table-text">
+                                            David James
+                                            <p>Email:davidjames@gmail.com</p>
+                                        </div>
+                                      </div>  
+                                    </td>
+                                    <td>3</td>
+                                    <td>£6.00</td>
+                                    <td>£15.00</td>
+                                    <td>£18.00</td>
+                                    <td>£33.00</td>
+                                    <td class="table-buttons">
+                                       <div><a href="#" class="editBTN">Edit</a></div>
+                                       <div><a href="#" class="updateBTN">Update</a></div>
+                                        <div><a href="#" class="deleteBTN">Delete</a></div>
+                                        <div><a href="#" class="sendInvoiceBTN">Invoicing</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                    <td><input type="checkbox" name="tableCheckbox"></td>
+                                    <td>
+                                      <div class="table-contacts">
+                                        <div class="table-img">
+                                            <img src="img/user-2.jpg" alt="">
+                                        </div>
+                                        <div class="table-text">
+                                            David James
+                                            <p>Email:davidjames@gmail.com</p>
+                                        </div>
+                                      </div>  
+                                    </td>
+                                    <td>3</td>
+                                    <td>£6.00</td>
+                                    <td>£15.00</td>
+                                    <td>£18.00</td>
+                                    <td>£33.00</td>
+                                    <td class="table-buttons">
+                                      <div><a href="#" class="editBTN">Edit</a></div>
+                                      <div><a href="#" class="updateBTN">Update</a></div>
+                                       <div><a href="#" class="deleteBTN">Delete</a></div>
+                                       <div><a href="#" class="sendInvoiceBTN">Invoicing</a></div>
+                                   </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 colspan="2" style="color:#37517E; text-align:right">
+                          Budget for maintenance: <br> <span id="total"><b>£630.00</b></span>
+                      </h3>
+                    </section>
+              
+            </main>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <script src="https://kit.fontawesome.com/b8d2ebdebd.js" crossorigin="anonymous"></script>
+    <script src="main.js/sidebar.js"></script>
+</html>

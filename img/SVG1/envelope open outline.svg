@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="39" viewBox="0 0 138 39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0.6);
+        font-size: 14px;
+        font-family: Lato-Regular, Lato;
+      }
+    </style>
+  </defs>
+  <text id="envelope_open_outline" data-name="envelope open outline" class="cls-1"><tspan x="0.627" y="14">envelope open outline</tspan></text>
+</svg>

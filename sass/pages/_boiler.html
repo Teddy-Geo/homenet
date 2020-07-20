@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo1.png">
+        
+        <title>HomeNet | Connect with people living in your area</title>
+    </head>
+    <body>
+      <div class="wrapper">
+      <div class="navbar__container">
+        <nav class="navbar">
+            <a class="navbar__logo-box" href="">
+                     <img src="img/logo1.png" alt="Logo" class="navbar__logo-img">
+                     HomeNet
+               </a>
+
+               <form action="#" class="search">
+                 <input type="text" class="search__input" placeholder="Search">
+                 <button class="search__button">
+                   <svg class="search__icon">
+                     <use xlink:href="img/sprite.svg#icon-search"></use>
+                   </svg>
+                 </button>
+               </form>
+
+               <div class="user-nav">
+                 <div class="user-nav__icon-box">
+                  <svg class="user-nav__icon">  
+                    <use xlink:href="img/sprite.svg#icon-chat"></use>
+                  </svg>
+                  <span class="user-nav__notification">7</span>
+                 </div>
+
+                 <div class="user-nav__user">
+                   <img src="img/user-4.jpg" alt="" class="user-nav__user-photo">
+                   <a href="#"class="user-nav__user-name">John</a>
+                 </div>
+
+                 <div class="user-nav__icon-box">
+                  <svg class="user-nav__icon">  
+                    <use xlink:href="img/sprite.svg#icon-log-out
+                    "></use>
+                  </svg>
+                 </div>
+
+               </div>
+        </nav>
+      </div>
+       
+        <div class="container">
+          <!-- <header class="header-user">
+            Header part
+          </header> -->
+          <div class="content">
+            <nav class="sidebar">
+              <ul class="side-nav">
+                <li class="side-nav__item">
+                  <a href="dashboard.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="building.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-home_work"></use>
+                    </svg>
+                    <span>Your Building</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="district.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-district"></use>
+                    </svg>
+                    <span>District</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="documents.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-documents"></use>
+                    </svg>
+                    <span>Documents</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="events.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-insert_invitation"></use>
+                    </svg>
+                    <span>Events</span>
+                  </a>
+                </li>
+
+                <li class="side-nav__item">
+                  <a href="important.html" class="side-nav__link">
+                    <svg class="side-nav__icon">
+                      <use xlink:href="img/sprite.svg#icon-note-important"></use>
+                    </svg>
+                    <span>Important</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="copyright">
+                &copy; 2020 by HomeNet.
+                <br> All rights reserved.
+             </div>
+            </nav>
+            <main class="user-view">
+              User View
+            </main>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+
+// User details form
+.user-details{
+  margin-top: 4rem;
+  /* position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+.ud-img-section,.ud-text-section,.ud-body{
+  border: 1px solid #A4AFB7;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  box-sizing: border-box;
+  @include responsive(bp-verysmallest){
+      width: $res-width-admin;
+  }
+}
+.ud-img-section{
+  height: 136px;
+  background: linear-gradient(
+    to right bottom,
+    rgba($dark-color, 1),
+    rgba($primary-color, 0.5),
+    rgba(rgb(55, 81, 126), 1)
+    );
+  background-size: cover;
+  background-position:center;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
+}
+.ud-img{
+  //position: relative;
+}
+.ud-img-content{
+  /* top: 131px;
+  left: 875px;
+  width: 94px;
+  height: 85px;
+  background: #F3F5FA 0% 0% no-repeat padding-box;
+  border-radius: 43px;
+  margin: 25px 0 0 20px; */
+}
+.avater-img{
+ border-radius: 2rem;
+ //padding: 1rem;
+ //padding-bottom: 1rem;
+ //margin-bottom: 20rem;
+  // background: danger-color;
+  /* color: $dark-color;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+.ud-text-section{
+  padding: 10px 0 10px 10px;
+  height: 97px;
+}
+.ud-text{
+  float: left;
+}
+.ud-text h1{
+  font-size:1.7rem;
+  color:$dark-color;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.ud-text p{
+  font-size:1.4rem;
+  color:$dark-color;
+}
+.ud-button{
+  float: right;
+  margin: 0 10px 0 0;
+}
+.ud-button label i{
+  color: $primary-color;
+}
+.ud-button button{
+  margin: 20px 0 0 0;
+}
+.ud-body{
+  padding: 40px 20px;
+}
+.form-gorup{
+  position: relative;
+  margin: 30px 0;
+}
+.user_input,.form-sec_input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: inherit;
+  border-bottom: 1px solid $color-grey-dark;
+  outline: none;
+  width: $width-input;
+  font-size: 1.2rem;
+  color:$dark-color;
+  &:focus,&:hover{
+      outline: none;
+      border-bottom: 1px solid $primary-color;
+  }
+}
+.form-gorup button {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+
+}
+.user-details.ud-body{
+  height: 70%;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.302" height="28" viewBox="0 0 30.302 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0.6);
+        stroke: #707070;
+      }
+    </style>
+  </defs>
+  <path id="Icon_open-account-logout" data-name="Icon open-account-logout" class="cls-1" d="M10.875,0V3.857h14.5V23.143h-14.5V27H29V0ZM7.25,7.714,0,13.5l7.25,5.786V15.429h14.5V11.571H7.25Z" transform="translate(0.802 0.5)"/>
+</svg>
